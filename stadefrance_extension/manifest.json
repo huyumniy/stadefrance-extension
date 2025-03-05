@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Stadefrance Bot",
+  "version": "1.0",
+  "description": "Stadefrance Bot Configuration",
+  "background": {
+    "service_worker": "dist/bundle.js"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["*://*.stadefrance.com/*"],
+      "js": ["src/content_scripts/content.js"],
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "src/images/stadium.png",
+        "html/htmlFileName.html",
+        "styles/*",
+        "fonts/*"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "permissions": [
+      "activeTab",
+      "webRequest",
+      "webRequestBlocking",
+      "declarativeNetRequest",
+      "scripting"
+    ],
+    "default_popup": "src/popup/popup.html"
+  },
+  "host_permissions": ["*://*/*"]
+}

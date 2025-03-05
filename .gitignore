@@ -1,0 +1,8 @@
+/Scripts
+/Lib
+/Include
+/NopeCHA
+web
+app.py
+pyvenv.cfg
+requirements.txt
