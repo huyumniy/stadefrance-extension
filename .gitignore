@@ -6,3 +6,5 @@ web
 app.py
 pyvenv.cfg
 requirements.txt
+tests/__pycache__
+tests/.pytest_cache
