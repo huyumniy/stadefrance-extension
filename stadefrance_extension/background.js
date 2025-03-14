@@ -1,5 +1,5 @@
 const TwoCaptcha = require("@2captcha/captcha-solver")
-const solver = new TwoCaptcha.Solver("29ada3bf8a7df98cfa4265ea1145c77b");
+const solver = new TwoCaptcha.Solver("api");
 // solver.balance()
 // .then((res) => {
 //     console.log(res)
